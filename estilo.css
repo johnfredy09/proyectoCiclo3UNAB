@@ -65,5 +65,15 @@ h5 {
   background-image: url(img/fondo2.jpg);
 }
 
+.button{
+  width: 50%;
+  height: 30px;
+  background: blueviolet;
+  color: white;
+  border-radius: 20px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
 
 

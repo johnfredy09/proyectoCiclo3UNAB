@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <script src="js/formulario.js"></script>
 </head>
 <body id="form1">
     <form>
@@ -62,55 +63,43 @@
                         <div class="row">
                             <div class="col">
                               <label>Documento:  </label>
-                              <input type="text" class="form-control" placeholder="Documento" aria-label="Documento" required>
+                              <input type="text" id="Documento" class="form-control" placeholder="Documento" aria-label="Documento" required>
                             </div>
                           </div><br>
                         <div class="row">
                             <div class="col">
                                 <label>Nombre:  </label>
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                                <input type="text" id="Nombre" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
                               </div>
                         </div><br>
                         <div class="row">
                             <div class="col">
                                 <label>Apellido:  </label>
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
+                                <input type="text" id="Apellido" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
                               </div>
                         </div><br>
                         <label>Estatura:<br></label>  
-                        <label> Metros</label>
-                        <input type="radio" id="Metros" name="Estatura">
+                        
                         <label> Centimetros</label>
                         <input type="radio" id="Centimetros" name="Estatura"><br>
-                        <input type="text" class="form-control" placeholder="Estatura" aria-label="Estatura"required>        
+                        <input type="text" id="Estatura" class="form-control" placeholder="Estatura" aria-label="Estatura"required>        
                         <br>
                         <label>Peso:<br></label>  
                         <label> Kilos</label>
                         <input type="radio" id="Kilos" name="Peso">
-                        <label> Libras</label>
-                        <input type="radio" id="Libras" name="Peso"><br>        
-                        <input type="text" class="form-control" placeholder="Peso" aria-label="Peso"required><br><br>
+                                
+                        <input type="text" id="Peso" class="form-control" placeholder="Peso" aria-label="Peso"required><br><br>
             
                         <label>Sexo: </label>         
                         <select name="select" id="Sexo">
                             <option value="value1">Seleccione</option>
-                            <option value="value1">Hombre</option> 
-                            <option value="value2" >Mujer</option>
-                            <option value="value3">Otro</option>
+                            <option value="value2">Hombre</option> 
+                            <option value="value3" >Mujer</option>
+                            <option value="value4">Otro</option>
                         </select><br><br>
-                        <div class="col">
-                          <div class="form-check">
-                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                            <label class="form-check-label" for="invalidCheck3">
-                              Acepta los términos y condiciones
-                            </label>
-                            <div id="invalidCheck3Feedback" class="invalid-feedback">
-                              Debes estar de acuerdo antes de enviar.
-                            </div>
-                          </div>
-                        </div>
+                        <input type="text" name="imc" id="imc">
                         <div>                          
-                          <button class="btn btn-primary" type="submit">Calcular</button>
+                          <input onclick="calcularImc()" type="button" class="button" name="Calcular" id="Calcular" value="Calcular">
                         </div>         
                   </div>
                   <div class="col">
