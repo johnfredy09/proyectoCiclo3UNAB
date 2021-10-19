@@ -8,6 +8,7 @@
     <title>Registro Usuario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
 </head>
 <body class="regis-usuario">
       
@@ -16,19 +17,19 @@
       <hr>
         <div class="col-md-4">
             <label for="inputZip" class="form-label">Nombres</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" required>
         </div>
         <div class="col-md-4">
             <label for="inputZip" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text"  class="form-control" id="inputZip">
           </div>
           <div class="col-md-2">
             <label for="inputZip" class="form-label">Edad</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text"  class="form-control" id="inputZip">
           </div>
           <div class="col-md-2">
             <label for="inputZip" class="form-label">Fecha Nacimiento</label>
-            <input type="date" class="form-control" id="inputZip">
+            <input type="date"  class="form-control" id="inputZip">
           </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
@@ -76,7 +77,8 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+        <!--<button onclick="registro()" type="submit" class="btn-primary">Registro</button>-->
+          <input onclick="registro_usuario()" type="submit" class="btn-primary" name="registro" id="registro" value="Registro">
         </div>
       </form>
 </body>

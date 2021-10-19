@@ -15,13 +15,13 @@ function calcularImc(){
         document.getElementById("imc").value=imc.toFixed(2);
 
         if(imc<18.5){
-            alert("Bajo peso");
+            alert("Su imc es: " + imc + "Bajo peso");
         }
         else if(imc>18.5 && imc<=24.9){
-            alert("Su peso es Normal")
+            alert("Su imc es: " + imc + "Su peso es Normal")
         }
         else if(imc>=25 && imc<=29.9){
-            alert("Sobre peso")
+            alert("Su imc es: " + imc + "Sobre peso")
         }
         /*else if(imc=30){
          //   alert("Su imc es: " + imc + " Obesidad ")

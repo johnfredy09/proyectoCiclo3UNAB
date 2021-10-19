@@ -75,5 +75,12 @@ h5 {
   cursor: pointer;
 }
 
+.btn-primary{
+  width: 150px;
+  height: 40px;  
+  margin: 0px 0px 10px 45%;
+  border-radius: 8px;
+}
+
 
 
